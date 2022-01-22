@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "627390851205",
+    "project_id": "teletubby-396e0",
+    "storage_bucket": "teletubby-396e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627390851205:android:f92466b130abb5d567e1ec",
+        "android_client_info": {
+          "package_name": "com.example.teletubby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627390851205-vci41h0nmf0hks9t0if4g5riju7be1eo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSrKQ2VfUJ62NfNXe0YHgHiW_fcBLfWg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627390851205-vci41h0nmf0hks9t0if4g5riju7be1eo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
