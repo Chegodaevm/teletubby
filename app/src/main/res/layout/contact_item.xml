@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_margin="@dimen/horizontal_margin"
+    android:layout_margin="@dimen/app_margin"
     style="@style/settingsButtons"
     android:layout_height="wrap_content">
 
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/contact_status"
+        android:id="@+id/toolbar_chat_status"
         style="@style/smallText"
         tools:text="в сети"
         app:layout_constraintStart_toEndOf="@id/contact_photo"

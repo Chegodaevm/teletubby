@@ -20,7 +20,7 @@
             android:layout_width="@dimen/settings_user_photo_width"
             android:layout_height="@dimen/settings_user_photo_height"
             android:src="@drawable/ic_default_photo_profile"
-            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginStart="@dimen/app_margin"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,10 +33,10 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             tools:text="@string/settings_default_username"
-            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginStart="@dimen/app_margin"
             android:textSize="@dimen/normalText"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_marginTop="@dimen/app_small_margin"
             app:layout_constraintTop_toTopOf="@id/settings_user_photo"
             app:layout_constraintStart_toEndOf="@id/settings_user_photo"/>
 
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/whiteblur"
             tools:text="@string/setting_default_status"
-            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginStart="@dimen/app_margin"
             android:textSize="@dimen/smallText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settings_full_name"
@@ -64,7 +64,7 @@
         android:textColor="@color/primary"
         android:textSize="@dimen/smallText"
         android:textStyle="bold"
-        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginStart="@dimen/app_margin"
         android:layout_marginTop="@dimen/vertical_large_margin"
         app:layout_constraintTop_toBottomOf="@+id/settings_header_block"/>
 
@@ -170,7 +170,7 @@
         android:layout_width="@dimen/settings_user_photo_width"
         android:layout_height="@dimen/settings_user_photo_height"
         android:src="@drawable/ic_camera"
-        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/app_margin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/settings_header_block"
         app:layout_constraintTop_toBottomOf="@id/settings_header_block"

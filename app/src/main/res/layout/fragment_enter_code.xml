@@ -26,7 +26,7 @@
         android:textSize="@dimen/normalText"
         android:textColor="@color/black"
         android:gravity="center"
-        android:layout_margin="@dimen/vertical_margin"
+        android:layout_margin="@dimen/app_small_margin"
         android:text="@string/register_text_enter_code"
         app:layout_constraintTop_toBottomOf="@id/register_image"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         style="@style/smallText"
         android:gravity="center"
         android:hint="@string/register_hint_default_code"
-        android:layout_margin="@dimen/vertical_margin"
+        android:layout_margin="@dimen/app_small_margin"
         android:text="@string/register_text_we_send"
         app:layout_constraintTop_toBottomOf="@id/register_text_enter_code"/>
 

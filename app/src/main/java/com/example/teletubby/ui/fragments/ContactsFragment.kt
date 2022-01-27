@@ -10,7 +10,6 @@ import com.example.teletubby.models.CommonModel
 import com.example.teletubby.utilits.*
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
-import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.contact_item.view.*
@@ -55,9 +54,14 @@ class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
 
                 mRefUsersListener = AppValueEventListener {
                     val contact = it.getCommonModel()
-                    holder.name.text = contact.fullname
+
+                    if (contact.fullname.isEmpty()) {
+                        holder.name.text = model.fullname
+                    } else  holder.name.text = contact.fullname
+
                     holder.status.text = contact.state
                     holder.photo.downloadAndSetImage(contact.photoUrl)
+                    holder.itemView.setOnClickListener { replaceFragment(SingleChatFragment(model)) }
                 }
 
                 mRefUsers.addValueEventListener(mRefUsersListener)
@@ -73,7 +77,7 @@ class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
 
     class ContactsHolder(view: View): RecyclerView.ViewHolder(view) {
         val name: TextView = view.contact_fullname
-        val status: TextView = view.contact_status
+        val status: TextView = view.toolbar_chat_status
         val photo: CircleImageView = view.contact_photo
     }
 
